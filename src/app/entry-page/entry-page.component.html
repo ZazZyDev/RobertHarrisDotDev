@@ -1,0 +1,20 @@
+
+<div id="title">
+<h1>
+    <h1 *ngIf="!isVisible"data-heading="E">{{firstName}}</h1>
+    <h1 class="lightsOn"*ngIf="isVisible"data-heading="ROBERT">{{firstName}}</h1>
+
+    
+    <h2 *ngIf="!isVisible" data-heading="A">{{surname}}</h2>
+    <h2 class="lightsOn"*ngIf="isVisible" data-heading="HARRIS">{{surname}}</h2>
+      </h1>
+      <p data-subheading>      Full stack developer
+
+    </p>
+    <div id = "pageJump">
+    <i (mouseenter)="mouseHover($event)" 
+    data-arrow  class="material-icons">
+        arrow_drop_down
+        </i>
+    </div>
+    </div>
