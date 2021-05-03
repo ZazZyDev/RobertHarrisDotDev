@@ -8,12 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class EntryPageComponent implements OnInit {
   firstName = 'Robert';
   surname = 'Harris';
-  isVisible: boolean = false;
+  isVisible = false;
 
-mouseHover(event:boolean){
-  if(event){
-    this.isVisible=true;
-
+mouseHover(event: boolean) {
+  if (event) {
+    this.isVisible = true;
   }
 }
 
