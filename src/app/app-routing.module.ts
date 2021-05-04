@@ -5,10 +5,19 @@ import {EntryPageComponent} from './entry-page/entry-page.component';
 
 
 const routes: Routes = [
-  { path: 'landing', component: EntryPageComponent },
+  { path: 'landing',
+    component: EntryPageComponent,
+    data: {animationState: 'One'}
+  },
   { path: 'home', component: HomeComponent },
-  { path: '', component: EntryPageComponent },
-  { path: '**', component: EntryPageComponent },
+  { path: '',
+    component: EntryPageComponent,
+    data: {animationState: 'One'}
+  },
+  { path: '**',
+    component: EntryPageComponent,
+    data: {animationState: 'One'}
+  },
 ];
 
 @NgModule({

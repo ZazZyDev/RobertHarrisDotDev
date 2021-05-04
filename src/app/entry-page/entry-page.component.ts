@@ -14,13 +14,17 @@ mouseHover(event: boolean) {
   if (event) {
     this.isVisible = true;
   }
+
 }
 
 
 
-  constructor() { }
+  constructor() {
+    this.isVisible = false;
+   }
 
   ngOnInit(): void {
+    this.isVisible = false;
   }
 
 }

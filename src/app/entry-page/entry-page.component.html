@@ -1,22 +1,21 @@
 
 <div id="title">
 <h1>
-    <h1 *ngIf="!isVisible"data-heading="E">{{firstName}}</h1>
-    <h1 class="lightsOn"*ngIf="isVisible"data-heading="ROBERT">{{firstName}}</h1>
+    <h1 *ngIf="!isVisible"data-heading="E">ROBERT</h1>
+    <h1 class="lightsOn"*ngIf="isVisible"data-heading="ROBERT">ROBERT</h1>
 
     
-    <h2 *ngIf="!isVisible" data-heading="A">{{surname}}</h2>
-    <h2 class="lightsOn"*ngIf="isVisible" data-heading="HARRIS">{{surname}}</h2>
+    <h2 *ngIf="!isVisible" data-heading="A">HARRIS</h2>
+    <h2 class="lightsOn"*ngIf="isVisible" data-heading="HARRIS">HARRIS</h2>
       </h1>
       <p data-subheading>      Full stack developer
 
     </p>
     <div id = "pageJump">
     <i (mouseenter)="mouseHover($event)" 
-    data-arrow  class="material-icons"><a routerLink="/home" routerLinkActive="active">
+    data-arrow  class="material-icons" routerLink="/home" routerLinkActive="active">
     
         arrow_drop_down
-    </a>
         </i>
     </div>
     </div>
