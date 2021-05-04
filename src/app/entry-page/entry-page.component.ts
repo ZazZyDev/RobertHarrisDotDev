@@ -10,6 +10,7 @@ export class EntryPageComponent implements OnInit {
   surname = 'Harris';
   isVisible = false;
 
+
 mouseHover(event: boolean) {
   if (event) {
     this.isVisible = true;
@@ -17,11 +18,6 @@ mouseHover(event: boolean) {
 
 }
 
-
-
-  constructor() {
-    this.isVisible = false;
-   }
 
   ngOnInit(): void {
     this.isVisible = false;

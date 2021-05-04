@@ -9,7 +9,9 @@ const routes: Routes = [
     component: EntryPageComponent,
     data: {animationState: 'One'}
   },
-  { path: 'home', component: HomeComponent },
+  { path: 'home',
+   component: HomeComponent, 
+   data: {animationState: 'Two'}},
   { path: '',
     component: EntryPageComponent,
     data: {animationState: 'One'}
