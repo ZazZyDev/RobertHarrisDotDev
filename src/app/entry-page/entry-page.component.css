@@ -80,10 +80,10 @@ h2{
 }
 
 #pageJump{
-    padding-top:24vh;
+    padding-top:30vh;
     transform: translate(0%, 0%);
     width: 100vw;
-    transform: scale(3.5);
+    transform: scale(2.5);
     opacity: 0.99;
     color:rgba(45, 45, 45, 1);
 
