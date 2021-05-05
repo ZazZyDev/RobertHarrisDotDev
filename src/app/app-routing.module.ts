@@ -7,18 +7,23 @@ import {EntryPageComponent} from './entry-page/entry-page.component';
 const routes: Routes = [
   { path: 'landing',
     component: EntryPageComponent,
-    data: {animationState: 'One'}
+    data: { state: 'entry'}
+    // data: {animationState: 'From'}
   },
   { path: 'home',
-   component: HomeComponent, 
-   data: {animationState: 'Two'}},
+   component: HomeComponent,
+   data: { state: 'home'}
+  },
+  //  data: {animationState: 'To'}}
   { path: '',
     component: EntryPageComponent,
-    data: {animationState: 'One'}
+    data: { state: 'entry'}
+    // data: {animationState: 'From'}
   },
   { path: '**',
     component: EntryPageComponent,
-    data: {animationState: 'One'}
+    data: { state: 'entry'}
+    // data: {animationState: 'From'}
   },
 ];
 

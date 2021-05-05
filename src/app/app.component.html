@@ -1,6 +1,6 @@
 <div id= "fullPage"style="text-align: center" >
   <app-nav-bar *ngIf="isNotLandingPage()"></app-nav-bar>
-  <div [@triggerName]="prepareRoute(outlet)">
+  <div [@routerTransition]="getState(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>  
 </div>
